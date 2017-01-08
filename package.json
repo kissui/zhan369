@@ -1,0 +1,40 @@
+{
+  "name": "juzi123",
+  "version": "1.0.0",
+  "description": "juzi123 static conf",
+  "main": "webpack.config.js",
+  "scripts": {
+      "clean": "rm -rf dist/",
+      "build": "npm run clean &  ./node_modules/webpack/bin/webpack.js -p",
+      "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js  --inline --port 8081 --content-base dist/",
+      "starts": "node server.js"
+  },
+
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.17.0",
+    "jquery": "^2.2.4",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.0",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.1",
+    "flexslider": "^2.6.0",
+    "lodash": "^4.13.1",
+    "node-sass": "^3.7.0",
+    "open": "0.0.5",
+    "sass-loader": "^3.2.0",
+    "tether": "^1.4.0"
+},
+
+
+
+  "author": "",
+  "license": "ISC"
+}
