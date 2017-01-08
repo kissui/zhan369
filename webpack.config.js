@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 
 	entry: {
@@ -18,11 +19,13 @@ module.exports = {
 			{ test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'}
 		]
 	},
-	//其它解决方案配置
-	resolve: {
-		extensions: ['', '.js', '.json', '.scss'],
-		alias: {
-			filter: path.join(__dirname, 'src/filters')
-		}
-	}
+
+
+	plugins: [
+		new HtmlWebpackPlugin({
+	      filename: 'index.html',
+	      template: './index.html',
+	  	})
+	]
+
 };
