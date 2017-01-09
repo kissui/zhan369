@@ -6,10 +6,11 @@
   "scripts": {
     "clean": "rm -rf dist/",
     "build": "npm run clean &  ./node_modules/webpack/bin/webpack.js -p",
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js  --inline --port 8081 --content-base dist/",
+    "start": "webpack-dev-server  --inline --port 8081 --content-base dist/",
     "starts": "node server.js"
   },
   "devDependencies": {
+    "autoprefixer": "^6.6.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
@@ -17,6 +18,8 @@
     "html-loader": "^0.4.3",
     "html-webpack-plugin": "^2.17.0",
     "jquery": "^2.2.4",
+    "precss": "^1.4.0",
+    "sass-loader": "^3.2.3",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.0",
@@ -24,6 +27,7 @@
   },
   "dependencies": {
     "animate.css": "^3.5.1",
+    "extract-text-webpack-plugin": "^1.0.1",
     "flexslider": "^2.6.0",
     "html-webpack-plugin": "^2.26.0",
     "lodash": "^4.13.1",

@@ -1,5 +1,13 @@
-.vb{
-    .vs{
+* {
+    margin: 0;
+    padding: 0;
+}
+.z-header{
+    width: 100%;
+    height: 61px;
+    background: #dddddd;
+    .content{
+        color: #fff;
         background: red;
     }
 }
